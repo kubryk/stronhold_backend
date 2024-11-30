@@ -57,7 +57,7 @@ wss.on('connection', (ws) => {
         } catch (error) {
             console.error('Error fetching system information:', error);
         }
-    }, 1000); // Оновлення кожні 5 секунд
+    }, 5000); // Оновлення кожні 5 секунд
 
     // Якщо клієнт відключається, зупиняємо передачу даних
     ws.on('close', () => {
